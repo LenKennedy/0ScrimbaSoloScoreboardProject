@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Scrimba Solo Scoreboard Project</title>
+</head>
+<body>
+    <div class="container">
+        <div class="teams-container">
+            <div id="home-container" class="team-container">
+                <h3 class="header">HOME</h3>
+                <P id="home-score-el" class="score">0</P>
+                <div class="buttons">
+                    <button class="plus-btn btn" onclick="homeIncrease(1)">+1</button>
+                    <button class="plus-btn btn" onclick="homeIncrease(2)">+2</button>
+                    <button class="plus-btn btn" onclick="homeIncrease(3)">+3</button>
+                </div>
+            </div>
+            <div id="guest-container" class="team-container">
+                <h3 class="header">GUEST</h3>
+                <p id="guest-score-el" class="score">0</p>
+                <div class="buttons">
+                    <button class="plus-btn btn" onclick="guestIncrease(1)">+1</button>
+                    <button class="plus-btn btn" onclick="guestIncrease(2)">+2</button>
+                    <button class="plus-btn btn" onclick="guestIncrease(3)">+3</button>
+                </div>
+            </div>    
+        </div>
+        </div>
+        <div>
+            <button id="footer-btn" class="btn" onclick="newGame()">New Game</button>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
